@@ -1,6 +1,6 @@
 <div class="main-header">
 
-  <a href="http://swagger.io" target="_blank" class="logo" ng-if="!showHeaderBranding()"></a>
+  <a href="/" target="_blank" class="logo" ng-if="!showHeaderBranding()"></a>
 
   <div ng-include="'templates/branding-left.html'" ng-if="showHeaderBranding()" class="branding-3rdparty"></div>
 
@@ -44,7 +44,7 @@
       </ul>
     </div>
 
-    <div class="preferences dropdown"  uib-dropdown>
+    <!--div class="preferences dropdown"  uib-dropdown>
       <button id="preferences" class="btn btn-default" uib-dropdown-toggle>
         <span>Preferences</span>
         <span class="caret"></span>
@@ -80,7 +80,7 @@
           </a>
         </li>
       </ul>
-    </div>
+    </div-->
 
     <!-- Handling of Code Generator service availability issues -->
     <span
@@ -111,7 +111,7 @@
 
     <div class="code-gen dropdown" uib-dropdown ng-if="clients && clients.length && !disableCodeGen">
       <button class="btn btn-default" id="ClientMenu" uib-dropdown-toggle>
-        <span>Generate Code</span>
+        <span>Action</span>
         <span class="caret"></span>
       </button>
 
@@ -168,7 +168,7 @@
     </div>
   </section>
 
-  <section class="status-bar">
+  <!--section class="status-bar">
     <div class="status {{statusClass}}" ng-if="status">
       <i ng-if="statusClass == 'working'" class="fa fa-spinner fa-pulse"></i>
       <i ng-if="statusClass == 'error'" class="fa fa fa-times"></i>
@@ -176,5 +176,5 @@
       <span>{{status}}</span>
     </div>
     <div class="brandRight" ng-include="'templates/branding-right.html'" ng-if="showHeaderBranding()"></div>
-  </section>
+  </section-->
 </div>
