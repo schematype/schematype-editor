@@ -6,11 +6,11 @@
   ngf-allow-dir="false"
   ngf-accept="'.json,.yaml,.yml'">
 
-  <div ui-layout="{ flow : 'column', dividerSize: '8px'}">
+  <div ui-layout="{ flow : 'column', dividerSize: '0px'}">
     <div class="editor pane" ui-layout-container>
       <div ui-view="editor"></div>
     </div>
-    <div class="preview pane" ui-layout-container>
+    <div class="preview pane" ui-layout-container size="0px">
       <div ui-view="preview"></div>
     </div>
   </div>
