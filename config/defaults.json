@@ -16,16 +16,9 @@
     "theme": "ace/theme/atom_dark"
   },
   "exampleFiles": [
-    "default.yaml",
-    "heroku-pets.yaml",
-    "minimal.yaml",
-    "echo.yaml",
-    "petstore_simple.yaml",
-    "petstore_full.yaml",
-    "basic-auth.yaml",
-    "security.yaml",
-    "instagram.yaml",
-    "twitter.yaml"
+    "cloudfoundry-manifest.stp",
+    "geo-coordinate.stp",
+    "node-package.stp"
   ],
   "autocompleteExtension": {},
   "useBackendForStorage": false,
@@ -35,7 +28,7 @@
   "useYamlBackend": false,
   "disableFileMenu": false,
   "headerBranding": false,
-  "disableNewUserIntro": false,
+  "disableNewUserIntro": true,
   "enableTryIt": true,
   "brandingCssClass": "",
   "importProxyUrl": "https://cors-it.herokuapp.com/?url="
