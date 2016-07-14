@@ -1,8 +1,8 @@
 {
-  "name": "swagger-editor",
-  "version": "2.10.2",
-  "homepage": "https://github.com/swagger-api/swagger-editor",
-  "description": "Swagger Editor",
+  "name": "schematype-editor",
+  "version": "0.0.1",
+  "homepage": "https://github.com/schematype/schematype-editor",
+  "description": "SchemaType Editor",
   "license": "Apache-2.0",
   "files": [
     "index.html",
@@ -17,12 +17,13 @@
     "README.md"
   ],
   "authors": [
+    "Ingy döt Net <ingy@ingy.net>",
     "Mohsen Azimi <me@azimi.me>",
     "Sahar Jafari <shr.jafari@gmail.com>"
   ],
   "repository": {
     "type": "github",
-    "url": "swagger-api/swagger-editor.git"
+    "url": "schematype/schematype-editor.git"
   },
   "devDependencies": {
     "angular": "^1.5.7",

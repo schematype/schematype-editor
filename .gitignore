@@ -12,3 +12,6 @@ buttons.diff
 .idea
 *.iml
 *.zip
+
+/package/
+/schematype-editor*
