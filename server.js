@@ -48,7 +48,7 @@ if (process.argv[1] === __filename) {
 
     // to avoid opening the browser set DO_NOT_OPEN environment
     // variable to ture
-    if (!process.env.DO_NOT_OPEN) {
+    if (false && !process.env.DO_NOT_OPEN) {
       console.log('Opening the browser');
       open(url);
     }
