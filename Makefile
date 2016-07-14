@@ -17,5 +17,6 @@ clean:
 	rm -fr schematype-editor*
 
 start:
+	npm start
 
 open:
