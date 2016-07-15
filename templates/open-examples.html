@@ -1,10 +1,16 @@
 <div class="modal-header">
   <h3 class="modal-title">Open An Example File</h3>
 </div>
-<div class="modal-body">
+
+<!-- div class="modal-body">
   <p>Pick one of the examples</p>
   <select ng-options="file for file in files" ng-model="selectedFile" autofocus></select>
-</div>
+</div-->
+
+<ul>
+    <li ng-repeat="file in files" autofocus><a ng-click="open(file)">{{file}}</a></li>
+</ul>
+
 <div class="modal-footer">
   <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
   <button class="btn btn-primary" ng-click="open(selectedFile)">Open</button>
