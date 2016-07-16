@@ -18,7 +18,9 @@
   "exampleFiles": [
     "cloudfoundry-manifest.stp",
     "geo-coordinate.stp",
-    "node-package.stp"
+    "node-package.stp",
+    "sample.stp",
+    "sample.jsc"
   ],
   "autocompleteExtension": {},
   "useBackendForStorage": false,
