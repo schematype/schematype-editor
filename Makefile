@@ -13,10 +13,24 @@ dist-dir: dist-tgz
 	rm -fr schematype-editor
 	mv package schematype-editor
 
-clean:
-	rm -fr schematype-editor*
+open:
+	open http://127.0.0.1:8080
+
+restart: stop start
 
 start:
-	npm start
+	@[ ! -f .server.pid ] || { echo 'already running'; exit 1; }
+	node server.js --schematype-editor 2>&1 > .server.log & \
+	    echo $$! > .server.pid
 
-open:
+stop:
+	@[ -f .server.pid ] || exit 1
+	kill -9 `cat .server.pid`
+	rm .server.pid
+
+show:
+	@[ ! -f .server.pid ] || echo "Running pid $$(cat .server.pid)"
+	@ps aux | grep schematype-editor | grep -v grep || true
+
+clean:
+	rm -fr schematype-editor* package
